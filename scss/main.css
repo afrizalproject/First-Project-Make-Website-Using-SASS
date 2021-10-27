@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap");
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../img/ilustrasi.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60vmax;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-image: none;
+    background-color: #fff;
+  }
+}
+
+.custom-nav .navbar-brand img {
+  width: 120px;
+  margin-top: -7px;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 2.4em;
+  -webkit-transition: 0.3s color ease-out;
+  transition: 0.3s color ease-out;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: white;
+  -webkit-transition: 0.3s color ease-in;
+  transition: 0.3s color ease-in;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+    color: #f19e00;
+    margin-left: 0;
+  }
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .sign-up-button {
+  background-color: #fff;
+  color: #0d1f51;
+  border-radius: 0.5em;
+  border: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-nav #navbarNav .navbar-nav .nav-item .sign-up-button {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .custom-nav {
+    margin-top: -1em;
+  }
+}
+
+.custom-section {
+  margin-top: 16em;
+}
+
+.custom-section h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #0d1f51;
+}
+
+.custom-section p {
+  margin-top: 1.8em;
+  color: #7295fb;
+  font-size: 1.2rem;
+}
+
+.custom-section a {
+  margin-top: 2.2em;
+  display: inline-block;
+  color: #fff;
+  background-color: #f19e00;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border: 1px solid #f19e00;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+}
+
+.custom-section a:hover {
+  color: #f19e00;
+  background-color: #fff;
+  border: 1px solid #f19e00;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-section {
+    margin-top: 4em;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,99 @@
+@import 'modules/fonts';
+@import 'modules/variables';
+@import 'modules/mixins';
+
+
+//Styles
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../img/ilustrasi.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60vmax;
+
+  @media screen and (max-width: 992px) {
+    background-image: none;
+    background-color: $text-white-color;
+  }
+}
+
+// navbar
+.custom-nav {
+  .navbar-brand {
+    img {
+      width: 120px;
+      margin-top: -7px;
+    }
+  }
+
+  #navbarNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: fade-out($text-white-color, 0.5);
+          font-weight: 500;
+          text-transform: uppercase;
+          margin-left: 2.4em;
+          transition: 0.3s color ease-out;
+
+          &:hover {
+            color: fade-in($text-white-color, 1);
+            transition: 0.3s color ease-in;
+          }
+
+          @media screen and (max-width: 992px) {
+            color: $primary-color;
+            margin-left: 0;
+          }
+        }
+        .sign-up-button {
+          background-color: $text-white-color;
+          color: $text-heading-color;
+          border-radius: 0.5em;
+          border: 0;
+          padding-left: 1.5em;
+          padding-right: 1.5em;
+
+          @media screen and (max-width: 992px) {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: -1em;
+  }
+}
+
+.custom-section {
+  margin-top: 16em;
+  h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: $text-heading-color;
+  }
+  p {
+    margin-top: 1.8em;
+    color: $text-description-color;
+    font-size: 1.2rem;
+  }
+  a {
+    margin-top: 2.2em;
+    @include button();
+    border: 1px solid $primary-color;
+    transition: 0.3s all ease-out;
+
+    &:hover {
+      color: $primary-color;
+      background-color: $text-white-color;
+      border: 1px solid $primary-color;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: 4em;
+    text-align: center;
+  }
+}
